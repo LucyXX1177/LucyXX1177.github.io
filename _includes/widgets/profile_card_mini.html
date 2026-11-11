@@ -1,7 +1,7 @@
 <aside class="profile-sidebar card border-0 shadow-sm bg-white mb-3">
   <div class="card-body p-4 text-center">
     {% if site.data.profile.portrait_url %}
-    <img src="{{ site.data.profile.portrait_url | relative_url }}" class="profile-portrait mb-4" width="160" height="160" alt="{{ site.data.profile.portrait_alt | default: site.data.profile.primary_name | escape }}">
+    <img src="{{ site.data.profile.portrait_url | relative_url }}" class="profile-portrait mb-4" width="160" height="224" alt="{{ site.data.profile.portrait_alt | default: site.data.profile.primary_name | escape }}">
     {% else %}<div class="profile-monogram mx-auto mb-3" aria-hidden="true">XL</div>{% endif %}
     <h1 class="profile-name">{{ site.data.profile.primary_name }}</h1>
     {% for position in site.data.profile.positions %}<p class="profile-position small mb-1">{{ position.name }}</p>{% endfor %}

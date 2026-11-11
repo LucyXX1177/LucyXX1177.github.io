@@ -204,7 +204,7 @@ div.lazy {
 /* Personal profile and publication details. */
 .email-text { overflow-wrap: anywhere; }
 .profile-monogram { width: 88px; height: 88px; border-radius: 8px; display: grid; place-items: center; background: #edf1f5; color: var(--accent); font-size: 2rem; font-weight: 600; }
-.profile-portrait { width: 160px; max-width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; border-radius: 8px; border: 1px solid var(--rule); }
+.profile-portrait { width: 160px; max-width: 100%; height: auto; aspect-ratio: 5 / 7; object-fit: contain; border-radius: 8px; border: 1px solid var(--rule); }
 .profile-name { font-size: 1.7rem; font-weight: 600; line-height: 1.25; margin-bottom: 0.85rem; }
 .profile-position { color: var(--muted); line-height: 1.6; }
 .profile-sidebar .card-body { padding: 1.75rem 1.25rem !important; }
