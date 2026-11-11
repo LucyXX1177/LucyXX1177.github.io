@@ -1,0 +1,30 @@
+---
+layout: default
+title: Research & Experience
+navbar_title: Research
+---
+<h1 class="h2 mb-4">Research &amp; Experience</h1>
+<h2 class="h4 mb-3">Research Experience</h2>
+{% for item in site.data.profile.research_experience %}
+<article class="card border-0 shadow-sm mb-3"><div class="card-body p-4">
+  <div class="d-flex flex-wrap justify-content-between"><h3 class="h5">{{ item.topic }}</h3><span class="small text-muted">{{ item.date }}</span></div>
+  <p class="mb-1"><strong>{{ item.institution }}</strong> &middot; {{ item.role }}</p>
+  {% if item.lab %}<p class="small text-muted">Lab: {{ item.lab }}</p>{% endif %}
+  {% if item.department %}<p class="small text-muted">{{ item.department }}</p>{% endif %}
+  <ul class="pl-3">{% for bullet in item.bullets %}<li class="mb-1">{{ bullet }}</li>{% endfor %}</ul>
+  {% if item.papers %}<div class="small publication-links">
+    {% for slug in item.papers %}
+      {% assign paper = site.publications | where: 'slug', slug | first %}
+      <a href="{{ '/publications.html' | relative_url }}#{{ slug }}" title="{{ paper.title | escape }}">Related work [{{ paper.order }}]</a>
+    {% endfor %}
+  </div>{% endif %}
+</div></article>
+{% endfor %}
+<h2 class="h4 mt-4 mb-3">Industry Experience</h2>
+{% for item in site.data.profile.industry_experience %}
+<article class="card border-0 shadow-sm mb-3"><div class="card-body p-4">
+  <div class="d-flex flex-wrap justify-content-between"><h3 class="h5">{{ item.institution }}</h3><span class="small text-muted">{{ item.date }}</span></div>
+  <p>{{ item.role }}</p>
+  <ul class="pl-3 mb-0">{% for bullet in item.bullets %}<li>{{ bullet }}</li>{% endfor %}</ul>
+</div></article>
+{% endfor %}

@@ -1,58 +1,87 @@
-primary_name: "Your Name"
+# Source: Xiaoyue_Liu_PHD_27Fall_Resume.pdf (2026-11-10).
+primary_name: "Xiaoyue (Lucy) Liu"
 secondary_name: ""
-navbar_name: "Your Name"
-
+navbar_name: "Xiaoyue Liu"
 positions:
-- name: Title or Position
-- name: Affiliation Name
-  logo: /assets/images/badges/MIT_Social_circle.png  # Logo is optional
-
-
-email: "your@email.com"
-# cv_link: link-to-your-cv-file
-gscholar: xFmQpf4AAAAJ  # This is an example, replace it with your own Google Scholar ID
-github: your_github_id
-twitter: your_twitter_id  # Do not include the '@' symbol
-# linkedin: your-linked-in-id
-# orcid: 0000-0000-0000-0000
-
+  - name: Bachelor of Engineering (Honours)
+  - name: National University of Singapore
+email: "e1304492@u.nus.edu"
+cv_link: /assets/files/Xiaoyue_Liu_PHD_27Fall_Resume.pdf
+gscholar: "b3lEVkAAAAAJ"
+# Add your own accounts or portrait when ready.
+# github: your-account
+# linkedin: your-profile
+portrait_url: /assets/images/photos/mushroom-cat.jpg
+portrait_alt: Cat wearing a mushroom hat
 short_bio_text_justify: false
 short_bio: >-
-  <p>
-    A <a href="https://en.wikipedia.org/wiki/Bicolor_cat" target="_blank">bicolor cat</a> is a cat with white fur combined with fur of some other colour, for example solid black, tabby, or colourpointed.
-  </p>
-  <p>
-    There are various patterns of a bicolour cat. These range from the Van-patterned (colour on the crown of the head 
-    and the tail only) to a solid colour with a throat locket or medallion. Bicolour coats are found in many cat breeds, 
-    as well as being common in domestic longhair and domestic shorthair cats.
-  </p>
-
-portrait_url: /assets/images/photos/portrait.jpg
-portrait_caption: >-
-  Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
-
+  <p>I am pursuing a <strong>Bachelor of Engineering (Honours)</strong> at the <strong>National University of Singapore</strong>,
+  with expected graduation in January 2027. My research focuses on medical image analysis,
+  4D cardiac reconstruction, and anatomically consistent segmentation.</p>
+  <p>At NUS, I worked in the <strong>Digital Heart Lab</strong> on whole-heart mesh reconstruction from cine MRI,
+  including differentiable contour rendering and temporal modeling. During my exchange at
+  <strong>Vanderbilt University</strong>, I worked in <strong>MASI</strong>
+  on topology-aware orbital segmentation.</p>
+research_interests:
+  - Medical Image Analysis
+  - 4D Cardiac Reconstruction
+  - Topology-Aware Segmentation
+  - Cardiac Digital Twins
 education:
-- name: Massachusetts Institute of Technology
-  logo: /assets/images/badges/MIT_Social_circle.png
-  position: >- 
-    Department of Electrical Engineering and Computer Science <br/>
-    Ph.D. Student
-  date: Sep. 2024 - present
-- name: Peking University
-  logo: /assets/images/badges/PKU_red.png
-  position: B.S. in Computer Science
-  date: Sep. 2019 - Jul. 2021
-
-# experience:
-# - name: Peking University
-#   logo: /assets/images/badges/PKU_red.png
-#   position: Research Intern
-#   date: Sep. 2019 - Jul. 2021
-
+  - name: National University of Singapore
+    position: Bachelor of Engineering (Honours)
+    date: Aug 2023 - Jan 2027 (expected)
+    details: "GPA: 4.69/5.0"
+    coursework: Discrete Structures and Data Analysis; Programming Methodology; Fundamentals of Signal Processing
+  - name: Vanderbilt University
+    position: Undergraduate Exchange Student
+    date: Jan 2026 - May 2026
+    details: "GPA: 3.73/4.0"
+    coursework: AI in Biomedical Engineering; Machine Learning and Natural Language Processing in Healthcare
 awards:
-- name: Award Name 2
-  date: 2024
-- name: Award Name 1 
-  date: 2021
-- name: A quick brown fox jumps over the lazy dog and runs away award
-  date: 2021
+  - name: MICCAI Society Registration Grant
+    date: Jun 2026
+  - name: "Dean's List, National University of Singapore"
+    date: Jan 2026
+research_experience:
+  - institution: Vanderbilt University
+    role: Undergraduate Research Intern
+    date: Jan 2026 - May 2026
+    lab: MASI
+    topic: Topology-aware orbital segmentation
+    bullets:
+      - Implemented an anatomical topology-aware loss for MRI orbital segmentation to support longitudinal volume analysis of thyroid eye disease before and after treatment.
+      - Improved structural accuracy by up to 23.57% over the baseline model.
+    papers: [spie-topology, orbital-normative, spie-ct-refinement, eye-tepro]
+  - institution: National University of Singapore
+    role: Undergraduate Research Experience
+    date: Oct 2024 - Nov 2025
+    lab: Digital Heart Lab
+    topic: Personalized 4D cardiac reconstruction
+    bullets:
+      - Introduced differentiable contour rendering for sparse multi-view CMR contour supervision to improve boundary alignment across cardiac views.
+      - Developed dual-context temporal modeling to preserve cardiac motion and reduce mesh jitter in cardiac mesh reconstruction.
+    papers: [cinemesh4d, depthscopy, dt4h-wholeheart, mi-geometry, media-cinemesh4d]
+  - institution: National University of Singapore
+    role: Undergraduate Research Intern
+    date: Jan 2024 - Sep 2024
+    department: Department of Diagnostic Radiology
+    topic: AI for pharmaceutical formulation
+    bullets:
+      - Reviewed research on AI-driven excipient optimization and pharmaceutical formulation design.
+      - Gained exposure to experimental techniques and imaging-related workflows in biomedical research.
+industry_experience:
+  - institution: MicroPort Medical (Shanghai) Co., Ltd.
+    role: Research & Development Intern, Cochlear Implants Department
+    date: May 2025 - Aug 2025
+    bullets:
+      - Developed cochlear implant noise detection and signal processing pipelines with the AI acoustics research team, improving noisy-speech recognition accuracy by 25.3%.
+service:
+  - name: MICCAI 2026
+    role: Reviewer
+    date: "2026"
+skills:
+  - name: Programming
+    items: Python, Java, MATLAB
+  - name: Machine Learning
+    items: PyTorch, TensorFlow

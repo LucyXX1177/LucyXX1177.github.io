@@ -1,0 +1,10 @@
+<section class="card border-0 shadow-sm bg-white mt-3" aria-label="Academic service and skills">
+  <div class="card-body p-4"><div class="row">
+    <div class="col-md-6"><h2 class="h5">Academic Service</h2>
+      {% for item in site.data.profile.service %}<p>{{ item.role }}, {{ item.name }}</p>{% endfor %}
+    </div>
+    <div class="col-md-6"><h2 class="h5">Skills</h2>
+      {% for item in site.data.profile.skills %}<p class="mb-1"><strong>{{ item.name }}:</strong> {{ item.items }}</p>{% endfor %}
+    </div>
+  </div></div>
+</section>
